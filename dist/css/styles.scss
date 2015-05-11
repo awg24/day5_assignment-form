@@ -1,0 +1,110 @@
+.background {
+	background: rgb(27,162,221);
+	font-family: Sans-Serif;
+	overflow: hidden;
+	section {
+		label {
+			padding-top: 20px;
+			padding-left: 20px;
+			padding-right: 25px;
+			font-size: 15px;
+			color: white;
+			display: block;
+
+			input {
+				width: 100%;
+				font-size: 20px;
+				margin-bottom: 15px;
+				margin-top: 5px;
+				height: 30px;
+				border:3px solid white;
+				display: block;
+				background: rgb(27,162,221);
+				color: white;
+
+				&::-webkit-input-placeholder {
+				   color: rgb(0,102,156);
+				   font-style: italic;
+				}
+			}
+
+			select {
+				display: block;
+				margin-bottom: 15px;
+				margin-top: 5px;
+				width: 100%;
+				height: 30px;
+				background: rgb(27,162,221);
+				color: white;
+			}
+
+			textarea {
+				display: block;
+				margin-bottom: 15px;
+				margin-top: 5px;
+				width: 100%;
+				height: 200px;
+				background: rgb(27,162,221);
+				color: white;
+				border:3px solid white;
+			}
+
+			input[type="radio"],input[type="checkbox"] {
+				height:15px;
+				width: 15px;
+				display: inline-block;
+			}		
+		}
+	}
+	div {
+
+		display: flex;
+		justify-content: center;
+
+		button {
+
+			border: 0;
+			height: 45px;
+			width: 175px;
+			background: rgb(16, 104, 134);
+			color: white;
+			font-size: 15px;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+@media (min-width: 768px){
+	.background {
+
+		.section1, .section2 {
+			float: left;
+			width: 50%;
+			margin-right: auto;
+		}
+
+		.section3 {
+			clear: left;
+		}
+	}
+}
+
+@media (min-width: 1122px){
+	.background {
+
+		.section1, .section2 {
+			float: left;
+			width: 33%;
+		}
+		.section3 {
+			display: inline-block;
+			width: 33%;
+		}
+
+		div {
+			clear: left;	
+		}
+
+	}
+}

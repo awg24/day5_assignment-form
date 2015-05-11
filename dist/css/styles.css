@@ -1,0 +1,75 @@
+.background {
+  background: #1ba2dd;
+  font-family: Sans-Serif;
+  overflow: hidden; }
+  .background section label {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 25px;
+    font-size: 15px;
+    color: white;
+    display: block; }
+    .background section label input {
+      width: 100%;
+      font-size: 20px;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      height: 30px;
+      border: 3px solid white;
+      display: block;
+      background: #1ba2dd;
+      color: white; }
+      .background section label input::-webkit-input-placeholder {
+        color: #00669c;
+        font-style: italic; }
+    .background section label select {
+      display: block;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      width: 100%;
+      height: 30px;
+      background: #1ba2dd;
+      color: white; }
+    .background section label textarea {
+      display: block;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      width: 100%;
+      height: 200px;
+      background: #1ba2dd;
+      color: white;
+      border: 3px solid white; }
+    .background section label input[type="radio"], .background section label input[type="checkbox"] {
+      height: 15px;
+      width: 15px;
+      display: inline-block; }
+  .background div {
+    display: flex;
+    justify-content: center; }
+    .background div button {
+      border: 0;
+      height: 45px;
+      width: 175px;
+      background: #106886;
+      color: white;
+      font-size: 15px;
+      text-align: center;
+      margin-bottom: 15px; }
+
+@media (min-width: 768px) {
+  .background .section1, .background .section2 {
+    float: left;
+    width: 50%;
+    margin-right: auto; }
+  .background .section3 {
+    clear: left; } }
+
+@media (min-width: 1122px) {
+  .background .section1, .background .section2 {
+    float: left;
+    width: 33%; }
+  .background .section3 {
+    display: inline-block;
+    width: 33%; }
+  .background div {
+    clear: left; } }
